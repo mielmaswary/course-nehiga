@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/course-nehiga/static/css/main.f9b8d115.css",
+    "main.js": "/course-nehiga/static/js/main.6a58a287.js",
+    "index.html": "/course-nehiga/index.html",
+    "main.f9b8d115.css.map": "/course-nehiga/static/css/main.f9b8d115.css.map",
+    "main.6a58a287.js.map": "/course-nehiga/static/js/main.6a58a287.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9b8d115.css",
+    "static/js/main.6a58a287.js"
+  ]
+}
