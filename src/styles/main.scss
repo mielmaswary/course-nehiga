@@ -1,0 +1,32 @@
+.question,
+.answerOption {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.question {
+  color: $white-text;
+  background-color: $mid-blue;
+}
+.question-headline {
+  @extend .question;
+  background-color: $main-blue;
+}
+.answerOption {
+  background-color: white;
+  color: $grey-text;
+  &:hover {
+    background-color: $light-blue;
+    color: $white-text;
+  }
+}
+
+.correct-answer-bg {
+  @extend .answerOption;
+  background-color: $correct-answer-bg;
+}
+.dis-correct-answer-bg {
+  @extend .answerOption;
+  background-color: $dis-correct-answer;
+}
