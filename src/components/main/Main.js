@@ -5,10 +5,9 @@ import WellDone from "./WellDone";
 
 import lessons from "../../data/lessoonsData";
 
-const Main = () => {
+const Main = (props) => {
   const [lessonNum, setLessonNum] = React.useState(0);
   const [isBetweenLessons, setIsBetWeenLessons] = useState(false);
-  console.log(isBetweenLessons);
   return (
     <div>
       {isBetweenLessons ? (
@@ -19,6 +18,7 @@ const Main = () => {
           lesson={lessons[lessonNum]}
           isBetweenLessons={isBetweenLessons}
           setIsBetWeenLessons={setIsBetWeenLessons}
+          openModal={props.openModal}
         />
       )}
     </div>

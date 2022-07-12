@@ -4,29 +4,31 @@ import { useState } from "react";
 const Quiz = (props) => {
   const [answerClassName, setAnswerClassName] = useState("answerOption");
 
-  const answerClickHanlde = (event) => {
-    const chosenAnswer = event.target.outerText;
+  const answerClickHanlde = (event, id) => {
+    console.log(event.target);
+    const chosenAnswer = event.target.innerHTML;
 
     if (chosenAnswer == props.correctAnswer) {
       props.setLessonNum((prevLessonNum) => prevLessonNum + 1);
       props.setIsBetWeenLessons(true);
       setTimeout(() => {
         props.setIsBetWeenLessons(false);
-      }, 1500);
+      }, 2000);
     } else {
+      props.openModal();
     }
   };
 
-  const answersOption = props.options.map((option) => {
+  const answersOption = props.options.map((option, id) => {
     return (
-      <div className={answerClassName} onClick={answerClickHanlde}>
+      <div key={id} className={answerClassName} onClick={answerClickHanlde}>
         {option}
       </div>
     );
   });
   return (
     <div className="inner-container">
-      <h3 className="question-headline">ענה על השאלה הבאה: </h3>
+      <h3 className="question-headline">:ענה על השאלה הבאה </h3>
       <h4 className="question">{props.q}</h4>
       {answersOption}
     </div>

@@ -3,7 +3,6 @@ import Quiz from "./Quiz";
 import Video from "./Video";
 
 const Lesson = (props) => {
-  console.log(props);
   return (
     <div className="container">
       <Video
@@ -20,6 +19,7 @@ const Lesson = (props) => {
         correctAnswer={props.lesson.quiz[0].correctAnswer}
         isBetweenLessons={props.isBetweenLessons}
         setIsBetWeenLessons={props.setIsBetWeenLessons}
+        openModal={props.openModal}
       />
     </div>
   );
