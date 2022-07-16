@@ -19,27 +19,26 @@ const App = () => {
   const openModal = () => {
     setIsModalOpen(true);
   };
-  return <PlayGround />;
-  // return (
-
-  //   <div className="app-container">
-  //     <Header
-  //       setSideMenuClassName={setSideMenuClassName}
-  //       isModalOpen={isModalOpen}
-  //       setIsSideMenuOpen={setIsSideMenuOpen}
-  //     />
-  //     <Main openModal={openModal} />
-  //     <Footer />
-  //     {isModalOpen && <Modal closeModal={closeModal} />}
-  //     <SideMenu
-  //       sideMenuClassName={sideMenuClassName}
-  //       setSideMenuClassName={setSideMenuClassName}
-  //       isModalOpen={isModalOpen}
-  //       setIsSideMenuOpen={setIsSideMenuOpen}
-  //       isSideMenuOpen={isSideMenuOpen}
-  //     />
-  //   </div>
-  // );
+  // return <PlayGround />;
+  return (
+    <div className="app-container">
+      <Header
+        setSideMenuClassName={setSideMenuClassName}
+        isModalOpen={isModalOpen}
+        setIsSideMenuOpen={setIsSideMenuOpen}
+      />
+      <Main openModal={openModal} />
+      <Footer />
+      {isModalOpen && <Modal closeModal={closeModal} />}
+      <SideMenu
+        sideMenuClassName={sideMenuClassName}
+        setSideMenuClassName={setSideMenuClassName}
+        isModalOpen={isModalOpen}
+        setIsSideMenuOpen={setIsSideMenuOpen}
+        isSideMenuOpen={isSideMenuOpen}
+      />
+    </div>
+  );
 };
 
 export default App;
