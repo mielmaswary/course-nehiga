@@ -35,3 +35,64 @@
     }
   }
 }
+
+.sideMenu {
+  .side-menu-container {
+    padding: 8px;
+    border: solid 1px $mid-blue-op-50;
+    border-radius: 8px;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+  }
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: $box-shadow-1;
+  width: 80%;
+  max-width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: $mid-blue;
+  .header {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    * {
+      padding: 10px;
+      margin: 5px;
+    }
+    button {
+      background-color: $mid-blue;
+      color: white;
+      border: 1px transparent solid;
+      border-radius: 8px;
+      width: 100%;
+      &:hover {
+        background-color: white;
+        color: $mid-blue;
+        border: solid 1px $mid-blue;
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.sideMenu-hide {
+  @extend .sideMenu;
+  left: -400px;
+}
