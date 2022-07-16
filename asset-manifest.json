@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/course-nehiga/static/css/main.15092d76.css",
-    "main.js": "/course-nehiga/static/js/main.a2931a13.js",
+    "main.js": "/course-nehiga/static/js/main.6b428ad0.js",
     "index.html": "/course-nehiga/index.html",
     "main.15092d76.css.map": "/course-nehiga/static/css/main.15092d76.css.map",
-    "main.a2931a13.js.map": "/course-nehiga/static/js/main.a2931a13.js.map"
+    "main.6b428ad0.js.map": "/course-nehiga/static/js/main.6b428ad0.js.map"
   },
   "entrypoints": [
     "static/css/main.15092d76.css",
-    "static/js/main.a2931a13.js"
+    "static/js/main.6b428ad0.js"
   ]
 }
