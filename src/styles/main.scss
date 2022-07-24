@@ -1,3 +1,7 @@
+.lesson-headline {
+  color: $main-blue;
+  margin-bottom: 10px;
+}
 .question,
 .answerOption {
   width: 100%;
@@ -44,10 +48,16 @@
   .title {
     font-size: 100px;
     font-weight: 700;
+    @media (max-width: 795px) {
+      font-size: 40px;
+    }
   }
   .sub-title {
     font-size: 20px;
     font-weight: 500;
+    @media (max-width: 795px) {
+      font-size: 15px;
+    }
   }
   height: 20rem;
   text-align: center;
@@ -71,8 +81,9 @@
   background-color: $mid-blue;
   color: $white-text;
 
-  width: 30vw;
-  height: calc(30vw / 2);
+  min-width: 290px;
+  min-height: 200px;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
   margin: auto;

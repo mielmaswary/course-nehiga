@@ -7,7 +7,7 @@ const Video = (props) => {
   const lessonId = props.id;
   return (
     <div className="inner-container">
-      <h3>{`סרטון מספר: ${lessonId} ${lessonName}`}</h3>
+      <h3 className="lesson-headline">{`סרטון מספר: ${lessonId} | ${lessonName}`}</h3>
       <ReactPlayer width="100%" url={url} />
     </div>
   );

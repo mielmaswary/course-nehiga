@@ -5,12 +5,14 @@ import Video from "./Video";
 const Lesson = (props) => {
   return (
     <div className="container">
-      <Video
-        lessonNum={props.lessonNum}
-        url={props.lesson.videoUrl}
-        lessonName={props.lesson.lessonName}
-        id={props.lesson.id}
-      />
+      {
+        <Video
+          lessonNum={props.lessonNum}
+          url={props.lesson.videoUrl}
+          lessonName={props.lesson.lessonName}
+          id={props.lesson.id}
+        />
+      }
       <Quiz
         lessonNum={props.lessonNum}
         setLessonNum={props.setLessonNum}
